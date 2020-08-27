@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Fighter;
+use App\Match;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class FighterController extends Controller
+class MatchController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class FighterController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Fighter  $fighter
+     * @param  \App\Match  $match
      * @return \Illuminate\Http\Response
      */
-    public function show(Fighter $fighter)
+    public function show(Match $match)
     {
         //
     }
@@ -52,10 +53,10 @@ class FighterController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Fighter  $fighter
+     * @param  \App\Match  $match
      * @return \Illuminate\Http\Response
      */
-    public function edit(Fighter $fighter)
+    public function edit(Match $match)
     {
         //
     }
@@ -64,10 +65,10 @@ class FighterController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Fighter  $fighter
+     * @param  \App\Match  $match
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Fighter $fighter)
+    public function update(Request $request, Match $match)
     {
         //
     }
@@ -75,10 +76,10 @@ class FighterController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Fighter  $fighter
+     * @param  \App\Match  $match
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Fighter $fighter)
+    public function destroy(Match $match)
     {
         //
     }

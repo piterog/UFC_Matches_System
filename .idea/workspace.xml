@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ed76e6-beca-44fc-8a6a-b4a41193704c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Champion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ChampionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ResultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ResultTypeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/FighterSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/FighterSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/FightersSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryFighterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryFighterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FighterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/FighterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MatchController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +150,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -165,7 +177,7 @@
       <workItem from="1598395321000" duration="603000" />
       <workItem from="1598439368297" duration="11000" />
       <workItem from="1598455315390" duration="1954000" />
-      <workItem from="1598481944408" duration="7016000" />
+      <workItem from="1598481944408" duration="8404000" />
     </task>
     <servers />
   </component>
