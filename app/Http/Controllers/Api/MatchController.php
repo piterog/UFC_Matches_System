@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Resources\MatchResource;
 use App\Match;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class MatchController extends Controller
      */
     public function index()
     {
-        //
+        return MatchResource::collection(Match::all());
     }
 
     /**

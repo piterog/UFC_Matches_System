@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Fighter;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\FighterResource;
 use Illuminate\Http\Request;
 
 class FighterController extends Controller
@@ -15,7 +16,7 @@ class FighterController extends Controller
      */
     public function index()
     {
-        //
+        return FighterResource::collection(Fighter::all());
     }
 
     /**

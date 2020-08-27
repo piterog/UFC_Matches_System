@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class CategoryFighter extends Model
+class CategoryFighter extends Pivot
 {
     protected $fillable = ['category_id', 'fighter_id'];
 }

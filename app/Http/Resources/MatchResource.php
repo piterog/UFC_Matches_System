@@ -14,6 +14,14 @@ class MatchResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'            => $this->id,
+            'red_corner'    => new FighterResource($this->firstFighter),
+            'blue_corner'   => new FighterResource($this->secondFighter),
+            'type_match'    => $this->type_match,
+            'rank'          => $this->rank,
+            'human_player'  => $this->played_with,
+            'category'      => new CategoryResource($this->category)
+        ];
     }
 }
