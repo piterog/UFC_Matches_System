@@ -11,8 +11,11 @@
 </head>
 <body>
     <div id="app">
+        <navbar-component></navbar-component>
         @yield('content')
     </div>
     <script src="{{asset('js/app.js')}}"></script>
+    <script defer src="{{ asset('js/manifest.js') }}"></script>
+    <script defer src="{{ asset('js/vendor.js') }}"></script>
 </body>
 </html>

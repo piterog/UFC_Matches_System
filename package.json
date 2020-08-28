@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "vuetify": "^2.3.9"
+        "bootstrap-vue": "^2.16.0",
+        "clear-require": "^3.0.0"
     }
 }
