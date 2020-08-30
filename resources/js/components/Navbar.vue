@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="danger" sticky="true" variant="dark">
+        <b-navbar toggleable="lg" type="danger" variant="dark">
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav class="d-flex justify-content-center">
@@ -17,9 +17,9 @@
 </template>
 
 <script>
-export default {
-name: "Navbar"
-}
+    export default {
+        name: "Navbar"
+    }
 </script>
 
 <style scoped>

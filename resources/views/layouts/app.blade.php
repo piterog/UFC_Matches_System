@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
-<body>
+<body class="bg-gray-600">
     <div id="app">
         <navbar-component></navbar-component>
-        @yield('content')
+        <b-container class="bg-dark mt-5">
+            @yield('content')
+        </b-container>
     </div>
     <script src="{{asset('js/app.js')}}"></script>
     <script defer src="{{ asset('js/manifest.js') }}"></script>
