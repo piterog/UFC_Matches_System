@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ed76e6-beca-44fc-8a6a-b4a41193704c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Fight.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/MatchResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/MatchResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Match.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Match.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_221508_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_221508_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_221520_create_matches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_221520_create_matches_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ResultTypesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ResultTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Dream_MMA.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/HEAVYwood.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Mikodacs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MatchController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/MainEvent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/EventTitle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Match.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Match.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +191,7 @@
       <workItem from="1598614361171" duration="18000" />
       <workItem from="1598628344624" duration="2561000" />
       <workItem from="1598803071443" duration="13011000" />
-      <workItem from="1598826085555" duration="6866000" />
+      <workItem from="1598826085555" duration="10511000" />
     </task>
     <servers />
   </component>
@@ -219,11 +207,15 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="695" y="356" width="576" height="394" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598823926971" />
-    <state x="511" y="263" width="896" height="807" key="search.everywhere.popup" timestamp="1598834340551">
+    <state x="693" y="311" width="524" height="485" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598836646421">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="693" y="311" width="524" height="485" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598836646421" />
+    <state x="511" y="263" width="896" height="807" key="search.everywhere.popup" timestamp="1598837597825">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="383" y="213" width="672" height="678" key="search.everywhere.popup/0.26.1440.874@0.26.1440.874" timestamp="1598227378674" />
-    <state x="511" y="263" width="896" height="807" key="search.everywhere.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598834340551" />
+    <state x="511" y="263" width="896" height="807" key="search.everywhere.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598837597825" />
     <state x="685" y="467" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598585070285">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

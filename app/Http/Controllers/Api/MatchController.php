@@ -46,9 +46,9 @@ class MatchController extends Controller
      * @param  \App\Match  $match
      * @return \Illuminate\Http\Response
      */
-    public function show(Match $match)
+    public function show($id)
     {
-        //
+        return new MatchResource(Match::find($id));
     }
 
     /**
@@ -83,5 +83,10 @@ class MatchController extends Controller
     public function destroy(Match $match)
     {
         //
+    }
+
+    public function matches($event_id)
+    {
+        return MatchResource::collection(Match::where('event_id', $event_id)->get());
     }
 }

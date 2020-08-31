@@ -3,35 +3,21 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('categories', 'Api\CategoryController@index');
 
+Route::post('champions', 'Api\ChampionController@index');
 
-Route::get('category', 'Api\CategoryController@index');
+Route::post('events', 'Api\EventController@index');
+Route::post('events/{id}', 'Api\EventController@show');
 
-Route::get('champion', 'Api\ChampionController@index');
+Route::post('fighters', 'Api\FighterController@index');
 
-Route::get('event', 'Api\EventController@index');
+Route::post('matches', 'Api\MatchController@index');
+Route::post('matches/{id}', 'Api\MatchController@show');
+Route::post('matches/event/{id}', 'Api\MatchController@matches');
 
-Route::get('fighter', 'Api\FighterController@index');
-
-Route::get('category', 'Api\CategoryController@index');
-
-Route::get('match', 'Api\MatchController@index');
-
-Route::get('result', 'Api\ResultController@index');
+Route::post('results', 'Api\ResultController@index');
 
 
 
