@@ -21,7 +21,9 @@ class MatchResource extends JsonResource
             'type_match'    => $this->type_match,
             'rank'          => $this->rank,
             'human_player'  => $this->played_with,
-            'category'      => new CategoryResource($this->category)
+            'event'         => new EventResource($this->event),
+            'category'      => new CategoryResource($this->category),
+            'order'         => $this->order
         ];
     }
 }

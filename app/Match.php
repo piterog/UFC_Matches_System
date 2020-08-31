@@ -13,6 +13,11 @@ class Match extends Model
         return $this->belongsTo('App\Category');
     }
 
+    public function event()
+    {
+        return $this->belongsTo('App\Event');
+    }
+
     public function firstFighter()
     {
         return $this->belongsTo('App\Fighter', 'fighter_1');

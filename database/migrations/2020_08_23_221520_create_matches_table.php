@@ -19,9 +19,12 @@ class CreateMatchesTable extends Migration
             $table->unsignedInteger('fighter_2');
             $table->enum('type_match', ['3', '5', 'c']);
             $table->enum('rank', [1, 2, 3]);
-            $table->enum('played_with', [1, 2]);
+            $table->unsignedInteger('event_id');
+            $table->foreign('event_id')->references('id')->on('events');
             $table->unsignedInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
+            $table->enum('played_with', [1, 2]);
+            $table->integer('order');
             $table->timestamps();
         });
     }
