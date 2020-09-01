@@ -12374,3 +12374,15 @@ body .container {
   font-family: Mikodacs;
   src: url("/fonts/Mikodacs.ttf");
 }
+@font-face {
+  font-family: RobotoRegular;
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("/fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url("/fonts/Roboto-Bold.ttf");
+}

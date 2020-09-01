@@ -1,7 +1,13 @@
 <template>
     <div class="m-0 p-0">
         <MainEvent :title="lowerTitle" :subtitle="subtitle"></MainEvent>
-<!--        <Fight></Fight>-->
+        <div v-for="fight in fights">
+            <Fight :category="fight.category.description"
+                   :fighter1="fight.red_corner.name" :cartel1="fight.red_corner.cartel"
+                   :fighter2="fight.blue_corner.name" :cartel2="fight.blue_corner.cartel"
+                   :order="fight.order" :rank="fight.rank" :human="fight.human_player">
+            </Fight>
+        </div>
     </div>
 </template>
 
@@ -16,7 +22,8 @@ export default {
     data(){
         return {
             title: '',
-            subtitle: ''
+            subtitle: '',
+            fights: []
         }
     },
     mounted(){
@@ -45,6 +52,7 @@ export default {
             axios.post('/api/matches/event/'+event_id)
                 .then( (response) => {
                     let data = response.data.data;
+                    this.fights = data;
                     console.log(data);
                 }).catch( (response) =>{
                     console.log(response);
