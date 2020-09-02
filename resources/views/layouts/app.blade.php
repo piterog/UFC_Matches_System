@@ -11,7 +11,7 @@
 </head>
 <body class="bg-gray-600">
     <div id="app">
-        <navbar-component></navbar-component>
+        <Navbar></Navbar>
         <b-container class="bg-dark mt-5">
             @yield('content')
         </b-container>

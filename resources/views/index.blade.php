@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <match-component></match-component>
+    <Match></Match>
 
     <br><br><br><br><br><br><br><br>
 @endsection

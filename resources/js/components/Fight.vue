@@ -26,7 +26,7 @@
                     </b-row>
                     <b-row>
                         <b-col class="cartel">
-                            <small>[ {{ cartel2 }} ]</small>
+                            <small>[ {{ cartel2 }}]</small>
                         </b-col>
                     </b-row>
                 </b-col>
