@@ -18,6 +18,7 @@ class CreateEventsTable extends Migration
             $table->string('title');
             $table->string('subtitle');
             $table->integer('number_fights');
+            $table->integer('order')->unique();
             $table->timestamps();
         });
     }
