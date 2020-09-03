@@ -18,7 +18,8 @@ class EventResource extends JsonResource
             'id'            => $this->id,
             'title'         => $this->title,
             'subtitle'      => $this->subtitle,
-            'number_fights' => $this->number_fights
+            'number_fights' => $this->number_fights,
+            'order'         => $this->order
         ];
     }
 }

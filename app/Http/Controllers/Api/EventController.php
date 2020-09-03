@@ -37,7 +37,20 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        try {
+            $event = Event::create($data['data']);
+            return response()->json(['status' => true, 'model' => new EventResource($event)]);
+        }catch (\Illuminate\Database\QueryException $e){
+            if($e->getCode() == "23505"){
+                return response()->json(['status' => false, 'message' => 'This title has already been registered!']);
+            }
+
+            return response()->json(['status' => false, 'message' => $e]);
+        } catch (\Exception $e){
+            return response()->json(['status' => false, 'message' => $e]);
+        }
     }
 
     /**

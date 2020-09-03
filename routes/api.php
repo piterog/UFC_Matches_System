@@ -8,8 +8,7 @@ Route::post('categories', 'Api\CategoryController@index');
 
 Route::post('champions', 'Api\ChampionController@index');
 
-Route::post('events', 'Api\EventController@index');
-Route::post('events/{id}', 'Api\EventController@show');
+Route::resource('events', 'Api\EventController');
 
 Route::post('fighters', 'Api\FighterController@index');
 

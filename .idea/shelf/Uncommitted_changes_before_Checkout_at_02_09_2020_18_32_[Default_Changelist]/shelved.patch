@@ -1,0 +1,149 @@
+Index: database/migrations/2020_08_23_221508_create_events_table.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nclass CreateEventsTable extends Migration\n{\n    /**\n     * Run the migrations.\n     *\n     * @return void\n     */\n    public function up()\n    {\n        Schema::create('events', function (Blueprint $table) {\n            $table->id();\n            $table->string('title');\n            $table->string('subtitle');\n            $table->integer('number_fights');\n            $table->timestamps();\n        });\n    }\n\n    /**\n     * Reverse the migrations.\n     *\n     * @return void\n     */\n    public function down()\n    {\n        Schema::dropIfExists('events');\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- database/migrations/2020_08_23_221508_create_events_table.php	(revision cd7eebc34b3fa6bf2f51ff753eefe5e53a4c9708)
++++ database/migrations/2020_08_23_221508_create_events_table.php	(date 1599082171292)
+@@ -18,6 +18,7 @@
+             $table->string('title');
+             $table->string('subtitle');
+             $table->integer('number_fights');
++            $table->integer('order')->unique();
+             $table->timestamps();
+         });
+     }
+Index: .idea/dataSources/65f38491-1d08-4e7d-a337-2136a364a818/storage_v2/_src_/database/ufc_matchs.O6TmRQ/schema/public.abK9xQ.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#n:public\n!<md> [414696, 0, null, null, -2147483648, -2147483648]\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/dataSources/65f38491-1d08-4e7d-a337-2136a364a818/storage_v2/_src_/database/ufc_matchs.O6TmRQ/schema/public.abK9xQ.meta	(revision cd7eebc34b3fa6bf2f51ff753eefe5e53a4c9708)
++++ .idea/dataSources/65f38491-1d08-4e7d-a337-2136a364a818/storage_v2/_src_/database/ufc_matchs.O6TmRQ/schema/public.abK9xQ.meta	(date 1599082121060)
+@@ -1,2 +1,2 @@
+ #n:public
+-!<md> [414696, 0, null, null, -2147483648, -2147483648]
++!<md> [420570, 0, null, null, -2147483648, -2147483648]
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"68ed76e6-beca-44fc-8a6a-b4a41193704c\" name=\"Default Changelist\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/app/Http/Controllers/EventController.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/resources/js/components/SidebarOption.vue\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/resources/views/events.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/js/app.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/js/app.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/mix-manifest.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/mix-manifest.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/js/app.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/resources/js/app.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/js/components/ExampleComponent.vue\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/js/components/Fight.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/resources/js/components/Fight.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/js/components/Teste.vue\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/views/index.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/resources/views/index.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/resources/views/layouts/app.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/resources/views/layouts/app.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/routes/web.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/routes/web.php\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Vue Single File Component\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitToolBoxStore\">\n    <option name=\"projectConfigVersion\" value=\"2\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php70\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php72\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/process\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-iconv\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php73\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/css-selector\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/flare-client-php\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/ignition\" />\n      <path value=\"$PROJECT_DIR$/vendor/facade/ignition-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/voku/portable-ascii\" />\n      <path value=\"$PROJECT_DIR$/vendor/monolog/monolog\" />\n      <path value=\"$PROJECT_DIR$/vendor/webmozart/assert\" />\n      <path value=\"$PROJECT_DIR$/vendor/opis/closure\" />\n      <path value=\"$PROJECT_DIR$/vendor/fzaninotto/faker\" />\n      <path value=\"$PROJECT_DIR$/vendor/brick/math\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/simple-cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/http-message\" />\n      <path value=\"$PROJECT_DIR$/vendor/vlucas/phpdotenv\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/commonmark\" />\n      <path value=\"$PROJECT_DIR$/vendor/asm89/stack-cors\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/flysystem\" />\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\n      <path value=\"$PROJECT_DIR$/vendor/league/mime-type-detection\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/phpunit\" />\n      <path value=\"$PROJECT_DIR$/vendor/nesbot/carbon\" />\n      <path value=\"$PROJECT_DIR$/vendor/theseer/tokenizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/psy/psysh\" />\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/guzzle\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/promises\" />\n      <path value=\"$PROJECT_DIR$/vendor/filp/whoops\" />\n      <path value=\"$PROJECT_DIR$/vendor/scrivo/highlight.php\" />\n      <path value=\"$PROJECT_DIR$/vendor/guzzlehttp/psr7\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpspec/prophecy\" />\n      <path value=\"$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir\" />\n      <path value=\"$PROJECT_DIR$/vendor/egulias/email-validator\" />\n      <path value=\"$PROJECT_DIR$/vendor/mockery/mockery\" />\n      <path value=\"$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles\" />\n      <path value=\"$PROJECT_DIR$/vendor/dragonmantank/cron-expression\" />\n      <path value=\"$PROJECT_DIR$/vendor/myclabs/deep-copy\" />\n      <path value=\"$PROJECT_DIR$/vendor/fideloper/proxy\" />\n      <path value=\"$PROJECT_DIR$/vendor/fruitcake/laravel-cors\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/type-resolver\" />\n      <path value=\"$PROJECT_DIR$/vendor/ramsey/collection\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock\" />\n      <path value=\"$PROJECT_DIR$/vendor/ramsey/uuid\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-common\" />\n      <path value=\"$PROJECT_DIR$/vendor/paragonie/random_compat\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/tinker\" />\n      <path value=\"$PROJECT_DIR$/vendor/nunomaduro/collision\" />\n      <path value=\"$PROJECT_DIR$/vendor/hamcrest/hamcrest-php\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/framework\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpoption/phpoption\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/manifest\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/ralouphie/getallheaders\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/resource-operations\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/global-state\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-enumerator\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/recursion-context\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/exporter\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/diff\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-token-stream\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-reflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/environment\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/comparator\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-file-iterator\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/type\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-code-coverage\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-text-template\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-timer\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/swiftmailer/swiftmailer\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php80\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mime\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-ctype\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\n      <path value=\"$PROJECT_DIR$/vendor/laravel/ui\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectId\" id=\"1gWC437PufbjK7rYHTyQt7oZwQX\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DatabaseDriversLRU\" value=\"postgresql\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/resources/views\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/app/Http/Controllers/Api\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/resources/views\" />\n      <recent name=\"$PROJECT_DIR$/app/Http/Controllers\" />\n      <recent name=\"$PROJECT_DIR$/resources/fonts\" />\n      <recent name=\"$PROJECT_DIR$/resources/js/components\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"phpunit.xml\" type=\"PHPUnitRunConfigurationType\" factoryName=\"PHPUnit\">\n      <TestRunner scope=\"XML\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"68ed76e6-beca-44fc-8a6a-b4a41193704c\" name=\"Default Changelist\" comment=\"\" />\n      <created>1598220766770</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1598220766770</updated>\n      <workItem from=\"1598220767810\" duration=\"7510000\" />\n      <workItem from=\"1598266590289\" duration=\"33000\" />\n      <workItem from=\"1598311736504\" duration=\"661000\" />\n      <workItem from=\"1598352826293\" duration=\"51000\" />\n      <workItem from=\"1598388736080\" duration=\"1454000\" />\n      <workItem from=\"1598395321000\" duration=\"603000\" />\n      <workItem from=\"1598439368297\" duration=\"11000\" />\n      <workItem from=\"1598455315390\" duration=\"1954000\" />\n      <workItem from=\"1598481944408\" duration=\"8404000\" />\n      <workItem from=\"1598614361171\" duration=\"18000\" />\n      <workItem from=\"1598628344624\" duration=\"2561000\" />\n      <workItem from=\"1598803071443\" duration=\"13011000\" />\n      <workItem from=\"1598826085555\" duration=\"10511000\" />\n      <workItem from=\"1598871530431\" duration=\"20000\" />\n      <workItem from=\"1598916501388\" duration=\"8651000\" />\n      <workItem from=\"1598957935215\" duration=\"62000\" />\n      <workItem from=\"1598970860521\" duration=\"1312000\" />\n      <workItem from=\"1598991600833\" duration=\"4293000\" />\n      <workItem from=\"1599044677666\" duration=\"23000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"555\" y=\"214\" width=\"800\" height=\"678\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1598487279168\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"555\" y=\"214\" width=\"800\" height=\"678\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598487279168\" />\n    <state x=\"695\" y=\"356\" width=\"576\" height=\"394\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1598823926971\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"695\" y=\"356\" width=\"576\" height=\"394\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598823926971\" />\n    <state x=\"693\" y=\"311\" width=\"524\" height=\"485\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog\" timestamp=\"1598836646421\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"693\" y=\"311\" width=\"524\" height=\"485\" key=\"#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598836646421\" />\n    <state width=\"508\" height=\"446\" key=\"SwitcherDM\" timestamp=\"1598926436855\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state width=\"508\" height=\"446\" key=\"SwitcherDM/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598926436855\" />\n    <state x=\"666\" y=\"297\" width=\"587\" height=\"512\" key=\"find.popup\" timestamp=\"1598993564452\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"666\" y=\"297\" width=\"587\" height=\"512\" key=\"find.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598993564452\" />\n    <state x=\"511\" y=\"263\" width=\"896\" height=\"807\" key=\"search.everywhere.popup\" timestamp=\"1598971075911\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"383\" y=\"213\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.26.1440.874@0.26.1440.874\" timestamp=\"1598227378674\" />\n    <state x=\"511\" y=\"263\" width=\"896\" height=\"807\" key=\"search.everywhere.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598971075911\" />\n    <state x=\"685\" y=\"467\" width=\"540\" height=\"172\" key=\"vcs.readOnlyHandler.ReadOnlyStatusDialog\" timestamp=\"1598585070285\">\n      <screen x=\"0\" y=\"40\" width=\"1920\" height=\"1040\" />\n    </state>\n    <state x=\"685\" y=\"467\" width=\"540\" height=\"172\" key=\"vcs.readOnlyHandler.ReadOnlyStatusDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040\" timestamp=\"1598585070285\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision cd7eebc34b3fa6bf2f51ff753eefe5e53a4c9708)
++++ .idea/workspace.xml	(date 1599082121428)
+@@ -2,19 +2,17 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="68ed76e6-beca-44fc-8a6a-b4a41193704c" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/resources/js/components/SidebarOption.vue" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/resources/views/events.blade.php" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/resources/js/components/Event.vue" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_221508_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_221508_create_events_table.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/resources/js/components/Fight.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Fight.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/resources/js/components/Teste.vue" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/resources/js/components/SidebarOption.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SidebarOption.vue" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/resources/views/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events.blade.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -33,10 +31,38 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitToolBoxStore">
+     <option name="projectConfigVersion" value="2" />
++    <option name="recentBranches">
++      <RecentBranches>
++        <option name="branchesForRepo">
++          <list>
++            <RecentBranchesForRepo>
++              <option name="branches">
++                <list>
++                  <RecentBranch>
++                    <option name="branchName" value="vue-form-generator" />
++                    <option name="lastUsedInstant" value="1599077076" />
++                  </RecentBranch>
++                  <RecentBranch>
++                    <option name="branchName" value="master" />
++                    <option name="lastUsedInstant" value="1599077075" />
++                  </RecentBranch>
++                </list>
++              </option>
++              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
++            </RecentBranchesForRepo>
++          </list>
++        </option>
++      </RecentBranches>
++    </option>
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration">
+     <include_path>
+@@ -158,6 +184,7 @@
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+     <property name="nodejs_package_manager_path" value="npm" />
++    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="RecentsManager">
+@@ -204,6 +231,8 @@
+       <workItem from="1598970860521" duration="1312000" />
+       <workItem from="1598991600833" duration="4293000" />
+       <workItem from="1599044677666" duration="23000" />
++      <workItem from="1599076751459" duration="3023000" />
++      <workItem from="1599079788596" duration="2251000" />
+     </task>
+     <servers />
+   </component>
+@@ -223,14 +252,18 @@
+       <screen x="0" y="40" width="1920" height="1040" />
+     </state>
+     <state x="693" y="311" width="524" height="485" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598836646421" />
++    <state x="464" y="188" width="1424" height="731" key="SettingsEditor" timestamp="1599079772421">
++      <screen x="0" y="40" width="1920" height="1040" />
++    </state>
++    <state x="464" y="188" width="1424" height="731" key="SettingsEditor/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1599079772421" />
+     <state width="508" height="446" key="SwitcherDM" timestamp="1598926436855">
+       <screen x="0" y="40" width="1920" height="1040" />
+     </state>
+     <state width="508" height="446" key="SwitcherDM/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598926436855" />
+-    <state x="666" y="297" width="587" height="512" key="find.popup" timestamp="1598993564452">
++    <state x="666" y="297" width="587" height="512" key="find.popup" timestamp="1599078306008">
+       <screen x="0" y="40" width="1920" height="1040" />
+     </state>
+-    <state x="666" y="297" width="587" height="512" key="find.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598993564452" />
++    <state x="666" y="297" width="587" height="512" key="find.popup/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1599078306008" />
+     <state x="511" y="263" width="896" height="807" key="search.everywhere.popup" timestamp="1598971075911">
+       <screen x="0" y="40" width="1920" height="1040" />
+     </state>
+@@ -241,4 +274,4 @@
+     </state>
+     <state x="685" y="467" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.40.1920.1040/1920.0.1440.900@0.40.1920.1040" timestamp="1598585070285" />
+   </component>
+-</project>
+\ No newline at end of file
++</project>
