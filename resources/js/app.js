@@ -9,11 +9,14 @@ Vue.component('SidebarOption', require('./components/SidebarOption.vue').default
 window.Vue = require('vue');
 
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
+import Vuex from 'vuex'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import VueFormGenerator from 'vue-form-generator'
 import 'vue-form-generator/dist/vfg.css'
 
+Vue.use(Vuex)
 Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
 Vue.use(VueFormGenerator)
 
 new Vue().$mount('#app')

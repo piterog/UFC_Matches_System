@@ -4,10 +4,12 @@
 $body-bg: #535353;
 $body-color: #a0a0a0;
 
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import 'node_modules/bootstrap-vue/src/index.scss';
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+@import "~bootstrap-vue/src/icons";
 
 // Variables
 @import 'variables';

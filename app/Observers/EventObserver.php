@@ -10,6 +10,7 @@ class EventObserver
     public function saving(Event $event)
     {
         $event->order = Event::max('order') + 1;
+        $event->subtitle = $event->subtitle ?? '';
     }
 
     /**

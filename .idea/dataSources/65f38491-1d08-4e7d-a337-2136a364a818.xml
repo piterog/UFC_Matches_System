@@ -2088,16 +2088,19 @@ sequence|table|5501874|5501876|1
     </table>
     <table id="153" parent="129" name="events">
       <ObjectId>5501800</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>420595</StateNumber>
     </table>
     <table id="154" parent="129" name="fighters">
       <ObjectId>5501757</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>420591</StateNumber>
     </table>
     <table id="155" parent="129" name="matches">
       <ObjectId>5501813</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>420595</StateNumber>
     </table>

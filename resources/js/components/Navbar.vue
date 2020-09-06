@@ -8,6 +8,7 @@
                     <b-nav-item href="#">Fighters</b-nav-item>
                     <b-nav-item href="#">Categories</b-nav-item>
                     <b-nav-item href="#">Champions</b-nav-item>
+                    <b-nav-item href="#">Play</b-nav-item>
                     <b-nav-item href="#">Events</b-nav-item>
                     <b-nav-item href="#">Matches</b-nav-item>
                 </b-navbar-nav>
