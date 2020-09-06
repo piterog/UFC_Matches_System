@@ -13,6 +13,8 @@ import Vuex from 'vuex'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import VueFormGenerator from 'vue-form-generator'
 import 'vue-form-generator/dist/vfg.css'
+import route from 'ziggy-js';
+import { Ziggy } from 'ziggy-js';
 
 Vue.use(Vuex)
 Vue.use(BootstrapVue)
@@ -21,4 +23,8 @@ Vue.use(VueFormGenerator)
 
 new Vue().$mount('#app')
 
-
+Vue.mixin({
+    methods: {
+        route: (name, params, absolute) => route(name, params, absolute, Ziggy),
+    },
+});

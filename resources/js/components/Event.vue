@@ -10,7 +10,7 @@
                     <b-icon icon="arrows-fullscreen" aria-hidden="true"></b-icon> {{item.title}}
                 </span>
                 <div>
-                    <b-badge variant="secondary"><a class="schedule-fights" href="">Schedule fights</a></b-badge>
+                    <b-button size="sm" variant="secondary"><a class="schedule-fights text-decoration-none text-light" :href="editEvents(item.id)">Schedule fights</a></b-button>
 
                     <b-badge variant="info">{{item.confirmed_fights}} / {{item.number_fights}}</b-badge>
                 </div>
@@ -113,7 +113,7 @@ export default {
                 });
         },
         editEvents(event_id) {
-            window.location.href = "";
+            return route('events.edit',event_id)
         }
     },
 }
@@ -125,7 +125,7 @@ export default {
         background-color: #666 !important;
     }
     a.schedule-fights {
-        cursor: pointer;
+
     }
 
 </style>
