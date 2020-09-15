@@ -10,7 +10,7 @@
                     <b-icon icon="arrows-fullscreen" aria-hidden="true"></b-icon> {{item.title}}
                 </span>
                 <div>
-                    <b-button size="sm" variant="secondary"><a class="schedule-fights text-decoration-none text-light" :href="editEvents(item.id)">Schedule fights</a></b-button>
+                    <a class="schedule-fights text-decoration-none text-light" :href="editEvents(item.id)"><b-button size="sm" variant="secondary">Schedule fights</b-button></a>
 
                     <b-badge variant="info">{{item.confirmed_fights}} / {{item.number_fights}}</b-badge>
                 </div>

@@ -23,6 +23,7 @@ class ResultResource extends JsonResource
             'loser'             => new FighterResource($this->loserFighter),
             'round'             => 'R'.$this->round,
             'time'              => (new Carbon($this->time))->format('H:i'),
+            'bonus'             => $this->bonus
         ];
     }
 }

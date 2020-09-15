@@ -25,6 +25,7 @@ class CreateResultsTable extends Migration
             $table->foreign('loser')->references('id')->on('fighters');
             $table->enum('round', [1,2,3,4,5]);
             $table->time('time');
+            $table->enum('bonus', ['FOTN', 'KOTN', 'SOTN', 'POTN'])->nullable();
             $table->timestamps();
         });
     }

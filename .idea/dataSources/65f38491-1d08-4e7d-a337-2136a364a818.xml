@@ -2073,6 +2073,7 @@ sequence|table|5501874|5501876|1
     </sequence>
     <table id="150" parent="129" name="categories">
       <ObjectId>5501770</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>420591</StateNumber>
     </table>
@@ -2116,6 +2117,7 @@ sequence|table|5501874|5501876|1
     </table>
     <table id="158" parent="129" name="results">
       <ObjectId>5501847</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>420599</StateNumber>
     </table>

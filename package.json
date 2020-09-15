@@ -29,6 +29,7 @@
         "bootstrap-vue": "^2.16.0",
         "clear-require": "^3.0.0",
         "vue-form-generator": "^2.3.4",
+        "vue-search-select": "^2.9.3",
         "vuex": "^3.5.1",
         "ziggy-js": "^0.9.4"
     }
